@@ -23,6 +23,7 @@
             <x-nav-link href="/kontak" :active="request()->is('kontak')">Kontak</x-nav-link>
             <x-nav-link href="/students" :active="request()->is('students')">Student</x-nav-link>
             <x-nav-link href="/guardian" :active="request()->is('guardian')">Guardian</x-nav-link>
+            <x-nav-link href="/classrooms" :active="request()->is('classrooms')">Classrooms</x-nav-link>
 
               </a>
             </div>

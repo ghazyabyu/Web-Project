@@ -16,7 +16,7 @@
             email
           </th>
           <th scope="col" class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
-            Kelas
+            Classroom
           </th>
           <th scope="col" class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
             Tanggal Lahir
@@ -37,22 +37,22 @@
             {{$loop->iteration}}
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-            {{$student['name']}}
+            {{$student->name}}
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-            {{$student['email']}}
+            {{$student->email}}
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-            {{$student['grade']}}
+            {{$student->classroom->classroom}}
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-            {{$student['date_of_birth']}}
+            {{$student->date_of_birth}}
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-            {{$student['gender']}}
+            {{$student->gender}}
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-            {{$student['address']}}
+            {{$student->address}}
           </td>
           
         </tr>

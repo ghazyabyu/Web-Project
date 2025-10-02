@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Factories;
+use App\Models\Classroom;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -22,7 +23,7 @@ class StudentFactory extends Factory
             'date_of_birth' => fake()->date(),
             'address' => fake()->address(),
             'gender' => fake()->randomElement(['male', 'female']),
-            'grade' => fake()->randomElement(['11pplg1', '11pplg2', '11pplg3', '11pplg4', '11pplg5', '11pplg6']),
+            'classroom_id' => Classroom::factory(),
             
         ];
     }
