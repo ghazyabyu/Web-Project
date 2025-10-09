@@ -24,6 +24,8 @@
             <x-nav-link href="/students" :active="request()->is('students')">Student</x-nav-link>
             <x-nav-link href="/guardian" :active="request()->is('guardian')">Guardian</x-nav-link>
             <x-nav-link href="/classrooms" :active="request()->is('classrooms')">Classrooms</x-nav-link>
+            <x-nav-link href="/teacher" :active="request()->is('teacher')">teacher</x-nav-link>
+            <x-nav-link href="/subject" :active="request()->is('subject')">subject</x-nav-link>
 
               </a>
             </div>

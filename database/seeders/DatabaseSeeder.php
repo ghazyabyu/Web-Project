@@ -6,6 +6,8 @@ use App\Models\User;
 use App\Models\Student;
 use App\Models\Guardian;
 use App\Models\Classroom;
+use App\Models\teacher;
+use App\Models\subject;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -19,10 +21,12 @@ class DatabaseSeeder extends Seeder
 
         // User::factory(10)->create();
 
-        // Student::factory(10)->create();
+        Student::factory(10)->create();
        $this->call([
         ClassroomSeeder::class,
         GuardianSeeder::class,
-    ]);
+        TeacherSeeder::class,
+        SubjectSeeder::class,
+       ]);
     }
 }
